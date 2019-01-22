@@ -19,12 +19,13 @@ class Stack:
         return len(self.items)
 
 stack = Stack()
+l = [1,2,3,4,5]
 
-for c in "yesterday":
-    stack.push(c)
+for n in l:
+    stack.push(n)
 
-b = ""
+l2 = []
 while not stack.is_empty():
-    b += stack.pop()
-print(b)
+    l2.append(stack.pop())
+print(l2)
 

@@ -22,9 +22,10 @@ stack = Stack()
 
 for c in "yesterday":
     stack.push(c)
+print(stack.items)
 
-b = ""
+text = ""
 while not stack.is_empty():
-    b += stack.pop()
-print(b)
+    text += stack.pop()
+print(text)
 
